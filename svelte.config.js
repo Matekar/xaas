@@ -24,6 +24,8 @@ export default {
 	runtime: 'nodejs20.x',
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter({
+			runtime: 'nodejs20.x'
+		})
 	}
 };
