@@ -21,6 +21,7 @@ import adapter from '@sveltejs/adapter-vercel';
 
 export default {
 	preprocess: vitePreprocess(),
+	runtime: 'nodejs20.x',
 
 	kit: {
 		adapter: adapter()
