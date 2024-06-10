@@ -31,6 +31,7 @@
       (ev) => {
         ev.preventDefault();
         XML.deleteNode($selected);
+        $selected = undefined;
         $xmlp = $xmlp;
       } 
     }>
@@ -75,6 +76,8 @@
             (ev) => {
               ev.preventDefault();
               XML.deleteNode(childNode);
+              $xmlp = $xmlp;
+              $selected = $selected;
             }
           }>
         </div>
